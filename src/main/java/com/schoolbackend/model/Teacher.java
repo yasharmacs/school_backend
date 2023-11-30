@@ -12,6 +12,7 @@ public class Teacher {
     private Address address;
     private Name name;
     private Contact contact;
+    private BankDetails bankDetails;
 
 }
 
