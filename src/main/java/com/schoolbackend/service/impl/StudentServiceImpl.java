@@ -10,6 +10,8 @@ public class StudentServiceImpl implements StudentService {
     public ResponseEntity<StudentInfoVM> addStudent(StudentInfoVM studentInfoVM){
         HttpStatus httpStatus=HttpStatus.INTERNAL_SERVER_ERROR;
 
+        //currently No validation --> direct save in DB.
+
         return  new ResponseEntity<>(httpStatus);
     }
 
