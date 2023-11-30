@@ -17,4 +17,9 @@ public class StudentInfoVM {
     private Date dob;
     private StudentClass studentClass;
 
+    private Contact contact;
+
+    private Date createdAt;
+
+    private Date updatedAt;
 }
