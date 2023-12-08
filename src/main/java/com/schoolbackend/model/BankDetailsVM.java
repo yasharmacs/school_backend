@@ -3,10 +3,12 @@ package com.schoolbackend.model;
 
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.data.couchbase.core.mapping.Document;
 
 @Data
 @Builder
-public class BankDetails {
+@Document
+public class BankDetailsVM {
 
     private  String ifscCode;
     private String bankName;

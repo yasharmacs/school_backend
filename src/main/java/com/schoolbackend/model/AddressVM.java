@@ -3,10 +3,12 @@ package com.schoolbackend.model;
 
 import lombok.Builder;
 import lombok.Data;
+import org.springframework.data.couchbase.core.mapping.Document;
 
 @Data
 @Builder
-public class Address {
+@Document
+public class AddressVM {
     private String houseNo;
     private String city;
     private String remainingAddress;

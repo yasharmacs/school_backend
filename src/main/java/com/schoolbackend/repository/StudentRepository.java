@@ -1,4 +1,8 @@
 package com.schoolbackend.repository;
 
-public class StudentRepository {
+import com.schoolbackend.model.StudentVM;
+import org.springframework.data.couchbase.repository.CouchbaseRepository;
+
+public interface StudentRepository extends CouchbaseRepository<StudentVM,String> {
+
 }
