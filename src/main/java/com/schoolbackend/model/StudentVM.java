@@ -7,8 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
-
-import java.util.Date;
+ import java.util.Date;
+import java.util.List;
 
 @Data
 @Builder
@@ -19,7 +19,7 @@ public class StudentVM {
     @Id
     private String rollNo;
     private NameVM name;
-    private String version;
+    private BankDetailsVM bankDetailsVM;
     private AddressVM address;
     private Date dob;
     private StudentClass studentClass;
@@ -27,4 +27,6 @@ public class StudentVM {
     private Date createdAt;
     private Date updatedAt;
     private String classId="401";
+    private List<ExamResultVM> examResultVMList;
 }
+

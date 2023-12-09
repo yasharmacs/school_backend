@@ -10,4 +10,7 @@ import org.springframework.data.couchbase.core.mapping.Document;
 @NoArgsConstructor
 @Document
 public class SubjectVM {
+
+    private String name;
+
 }

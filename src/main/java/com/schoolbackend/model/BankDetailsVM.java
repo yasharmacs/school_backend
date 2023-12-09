@@ -14,4 +14,5 @@ public class BankDetailsVM {
     private String bankName;
     private String bankAccountNumber;
     private String branchName;
+
 }
