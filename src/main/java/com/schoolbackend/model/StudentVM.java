@@ -1,6 +1,7 @@
 package com.schoolbackend.model;
 
 import com.schoolbackend.constants.StudentClass;
+import com.schoolbackend.constants.StudentStatusEnum;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,6 +10,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.couchbase.core.mapping.Document;
  import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 @Data
 @Builder
@@ -27,6 +29,12 @@ public class StudentVM {
     private Date createdAt;
     private Date updatedAt;
     private String classId="401";
-    private List<ExamResultVM> examResultVMList;
+
+    private StudentStatusEnum status;
+
+    //String -> Class
+    private Map<String,List<ExamResultVM>> currentClassExamResult;
+
+    private Map<String,List<ExamResultVM> > historicClassExamResult;
 }
 
